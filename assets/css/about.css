@@ -1,0 +1,271 @@
+/*
+	Global Declarations
+	color:#426696;
+	color:#658ec9;
+*/
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+
+:root{
+	--glass-color-1:#65dfc9;
+	--glass-color-2:#6cdbeb;
+	--bg-white:linear-gradient(
+					to right bottom, 
+					rgba(255,255,255,0.9), 
+					rgba(255,255,255,0.3)
+				);
+				
+	--bg-white-dark:linear-gradient(
+					to right bottom, 
+					rgba(255,255,255,1), 
+					rgba(255,255,255,0.7)
+					);
+					
+	--bg-green:linear-gradient(
+					to top right, 
+					#65dfc9, 
+					#6cdbeb
+				);
+				
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	letter-spacing:0.5px;
+}
+
+/* ========== Section1: Nav Bar Start ========== */
+/* ===== Glass Config Start ===== */
+
+.glass-bg{
+	background-image:var(--bg-green);
+	height:100%;
+	width:100%;
+	border-radius:10px;
+	padding-bottom:15px;
+}
+/* ===== Glass Config End ===== */
+
+/* ===== Nav Config Start ===== */
+.navigation-dev{
+	height:60px;
+}
+.nav-box{
+	background-image:var(--bg-white) !important;
+	color:#426696 !important; 
+	/* height:100%; */
+	z-index:100;
+}
+.nav-dev-logo{
+	padding: 8px;
+}
+.nav-dev{
+	text-decoration:none;
+	color:#426696 !important;
+	margin: 0px 5px;
+	transition: all 0.3s;
+	/* border:solid; */
+	
+}
+
+.nav-dev:hover{
+	text-decoration:none;
+	color:white !important;
+	border-radius:20%;
+	border-bottom:solid;
+	border-top:solid;
+	background-image:var(--bg-green);
+
+}
+
+/* ===== Nav Config End ===== */
+
+/* ========== Section1: Nav Bar End ========== */
+
+.about-box{
+	padding-bottom:20px;
+	width:60%;
+	margin:10px auto;
+	background-image:var(--bg-white);
+	border-radius:20px;
+	box-shadow:-6px 8px 10px -6px #426696;
+	z-index:10 !important;
+	backdrop-filter: blur(10px);
+}
+.about-box-intro{
+	background-image:var(--bg-white-dark);
+	border-radius:20px;
+	padding:20px;
+	
+}
+.about-box-intro h3{
+	font-size:25px;
+	color:#426696;
+}
+
+.about-box-intro h4{
+	text-indent:40px;
+	text-align:justify;
+	font-size:17px;
+	color:#658ec9;
+	line-height:23px;
+}
+.about-box-body-heading{
+	padding:16px 23px 8px;
+	
+}
+
+.about-box-body h4{
+	font-size:17px;
+	color:#658ec9;
+	padding-top:5px;
+}
+
+.about-box-body h5{
+	font-size:14px;
+	color:#426696;
+	padding-top:5px;
+}
+
+
+/*===== proficiency cards===== */
+.proficiency-card{
+	margin: 5px auto;
+	padding:10px 5px;
+	background-image:linear-gradient(
+		to right bottom, 
+		rgba(255,255,255,0.9), 
+		rgba(255,255,255,0.5)
+	);
+	border-radius:10px;
+}
+.proficiency-card h4{
+	margin-bottom:2px;
+}
+
+.progress-color{
+	background-image:linear-gradient(
+		to top right, 
+		var(--glass-color-1), 
+		var(--glass-color-2)
+	);
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Section3: Footer Start ========== */
+.footer-row{
+	height:200px;
+	margin:10px 0px;
+	background-image:var(--bg-white-dark);
+	padding:auto;
+	border-top: 3px solid #426696;
+	border-bottom: 3px solid #426696;
+	border-radius:5px;
+	
+	/* box-shadow:2px 2px 2px 2px #658ec9; */
+}
+
+.footer-col{
+	padding:10px;
+	margin:auto;
+	text-align:center;
+	box-shadow:-5px 6px 10px -6px #426696;
+	
+	/* border:solid; */
+}
+
+.footer-col a{
+	padding: 5px 0px;;
+	display:block;
+	color:#658ec9;
+	transition: all 0.2s;
+}
+
+.footer-col h4{
+	padding:3px;
+	padding-bottom:5px;
+	color:#426696;
+	border-bottom: 2px dashed #426696;
+}
+
+.footer-col a:hover{
+	text-decoration:none;
+	color:white !important;
+	border-radius:20%;
+	border-bottom:solid;
+	border-top:solid;
+	background-image:var(--bg-green);
+	
+}
+
+.copyright-row{
+	border-radius:10px;
+	background-image:var(--bg-green);
+	padding:8px;
+	margin:10px 0px;
+	text-align:center;
+	
+}
+/* ========== Section3: Footer End ========== */
+
+/* ===== Circle config ===== */
+.circle-1, .circle-2{
+	position:absolute;
+	height:200px;
+	width:200px;
+	border-radius:100%;
+	background-image:linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.3)
+	);
+}
+
+.circle-1{
+	top:25%;
+	left:20%;
+}
+
+.circle-2{
+	top:45%;
+	right:20%;
+	
+}
+
+
+/* ========== MEDIA QUERY ========== */
+
+@media screen and (min-width:992px){
+	.nav-box{
+		margin:0px;
+		padding:0px 33%;
+	}
+}

@@ -1,0 +1,450 @@
+/* Global Declarations */
+/*
+ICONS
+Home: <i class="bi bi-house-fill"></i>
+Aboout: <i class="bi bi-journal-code"></i>
+Projects: <i class="bi bi-briefcase-fill"></i>
+Contact: <i class="bi bi-person-lines-fill"></i>
+quote: <i class="bi bi-cart-check-fill"></i>
+*/
+:root{
+	--glass-color-1:#65dfc9;
+	--glass-color-2:#6cdbeb;
+	
+}
+
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+	
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+h4{
+	margin:0px;
+	font-size:16px;
+	color:#426696;
+}
+
+h5{
+	margin:0px;
+	font-size:13px;
+	color:#658eC6;
+}
+
+/*==========  Section1:Dashboard ==========*/
+.bg-glass{
+	display:flex;
+	height:100vh;
+	background-image:linear-gradient(
+		to top right, 
+		var(--glass-color-1), 
+		var(--glass-color-2)
+	);
+	align-items:center;
+}
+
+.partition-body{
+	width:50%;
+	background-image:linear-gradient(
+		to right bottom, 
+		rgba(255,255,255,0.9), 
+		rgba(255,255,255,0.3)
+	);
+	height:80%;
+	margin:auto;
+	border-radius:20px;
+	overflow:hidden;
+	z-index:2;
+	backdrop-filter: blur(15px);
+}
+
+
+
+
+
+/* ===== Circle config ===== */
+.circle-1, .circle-2{
+	position:absolute;
+	height:200px;
+	width:200px;
+	border-radius:100%;
+	background-image:linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.3)
+	);
+	
+}
+
+.circle-1{
+	top:70%;
+	left:20%;
+}
+
+.circle-2{
+	top:5%;
+	right:20%;
+	
+}
+
+
+
+
+
+
+/*===== Partition-1 =====*/
+
+.partition-1{
+	background-image:linear-gradient(
+		to right bottom, 
+		rgba(255,255,255,0.9), 
+		rgba(255,255,255,0.5)
+	);
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+	align-items:center;
+	border-radius:20px;
+}
+
+.partition-1 .profile{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+.profile-details{
+	text-align:center;
+	/* border:solid; */
+}
+
+
+
+
+/*===== Partition-1 Image =====*/
+.img{
+	width:80px;
+	height:80px;
+	border-radius:100%;
+	overflow:hidden;
+	/* margin: 0px auto; */
+	/* border:solid; */
+}
+
+img{
+	height:100%;	
+	width:150%;
+	margin-left:-25%;
+}
+
+.profile-details{
+	/* border:solid; */
+}
+
+.profile-details h4{
+	margin:3px 0px;
+}
+
+
+
+
+/*===== Partition-1 Link=====*/
+.link{
+	margin:0px auto;
+	/* border:solid; */
+	padding:5px;
+}
+
+.link a{
+	width:50%;
+	display:flex;
+	align-items:center;
+	padding:5px;
+	margin: 5px auto;
+	transition:all 0.3s;
+	justify-content:center;
+	/* border:solid; */
+	
+}
+
+.link h5{
+	margin-left:10px;
+}
+
+.link span i{
+	font-size:25px;
+	background:linear-gradient(
+		to top right, 
+		var(--glass-color-1), 
+		var(--glass-color-2)
+	);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	/* border-style:dashed; */
+}
+
+
+
+
+
+/*===== Partition-1 Quotebox =====*/
+.quote-box {
+	width:80%;
+	display:flex;
+	align-items:center;
+	background-image:linear-gradient(
+		to top right, 
+		var(--glass-color-1), 
+		var(--glass-color-2)
+	);
+	border-radius:20px;
+	border-radius:20px;
+	box-shadow: 1px 2px 5px 0px #6cdbeb;
+	transition:all 0.3s;
+}
+
+.quote-box i{
+	font-size:40px;
+	color:white;
+	padding:0px 25px 0px 0px;
+	
+}
+
+
+
+.quote{
+	display:flex;
+	align-items:center;
+	/* padding:5px; */
+	/* margin: 15px 0px; */
+	
+	
+}
+
+.quote h5{
+	display:block;
+	color:white;
+	font-weight:bold;
+	
+	padding:0px 0px 0px 25px;
+	margin:0;
+	line-height:18px;
+}
+
+/* Hover */
+.quote:hover, .link a:hover{
+	text-decoration:none;
+}
+
+.link a:hover{
+	border-bottom:solid;
+	border-top:solid;
+	border-radius:20%;
+	color:#426696;
+	
+	
+}
+
+.quote-box:hover{
+	transform:scale(1.1) translateY(-1px);
+	box-shadow: 1px 4px 13px 0px #6cdbeb;
+}
+
+
+
+
+
+
+
+
+/*===== Partition-2 =====*/
+.partition-2{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+	
+	
+}
+.introduction{
+	margin:20px 2%;
+	
+}
+
+.introduction h4{
+	font-size:25px;
+	
+	margin-bottom:5px;
+}
+.introduction h5{
+	font-size:16px;
+	line-height:18px;
+}
+
+.introduction h4 span:before{
+	content:"";
+	animation-name: designation;
+	animation-duration: 5s;
+	animation-timing-function:ease;
+	animation-iteration-count: infinite;
+}
+
+
+.proficiency-card{
+	margin: 10px auto;
+	padding:10px 5px;
+	background-image:linear-gradient(
+		to right bottom, 
+		rgba(255,255,255,0.9), 
+		rgba(255,255,255,0.5)
+	);
+	border-radius:10px;
+}
+.proficiency-card h5{
+	margin-bottom:5px;
+}
+.progress{
+	
+}
+.progress-color{
+	background-image:linear-gradient(
+		to top right, 
+		var(--glass-color-1), 
+		var(--glass-color-2)
+	);
+	
+}
+
+
+
+
+
+/* ========== ANIMATIONS START ========== */
+
+@keyframes designation{
+	0%{
+		opacity:0;
+		content:"Web designer.";
+		text-transform:uppercase;
+	}
+	40%{
+		opacity:1;
+		content:"Web designer.";
+		text-transform:uppercase;
+	}
+	49%{
+		opacity:0;
+		content:"Web designer.";
+		text-transform:uppercase;
+	}
+	50%{
+		opacity:0;
+		content:"Web developer.";
+		text-transform:uppercase;
+	}
+	90%{
+		opacity:1;
+		content:"Web developer.";
+		text-transform:uppercase;
+	}
+	100%{
+		opacity:0;
+		content:"Web developer.";
+		text-transform:uppercase;
+	}
+	
+}
+/* ========== ANIMATIONS END ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Media Queries ========== */
+@media screen and (max-width:768px){
+	.profile{
+		margin-bottom:2px;
+		margin-top:5px;
+	}
+	.profile-details{
+		text-align:left;
+		/* border:solid; */
+	}
+	
+	.link{
+		/* border:solid; */
+		padding:0px;
+	}
+	
+	.link a{
+		width:100%;
+		padding:5px 5px;
+		transition:all 0.3s;
+		/* border:solid; */
+	}
+	
+	.link span i{
+		font-size:20px;
+	}
+	
+	.quote-box{
+		margin-bottom:5px;
+		
+	}
+
+	.proficiency-card{
+		margin: 5px auto;
+		padding:5px 5px;
+		background-image:linear-gradient(
+			to right bottom, 
+			rgba(255,255,255,0.9), 
+			rgba(255,255,255,0.5)
+		);
+		border-radius:10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
