@@ -212,23 +212,26 @@ img{
 .quote-box i{
 	font-size:40px;
 	color:white;
-	padding:0px 25px 0px 0px;
+	padding-right:20px;
+	/* padding:0px 25px 0px 0px; */
 	
 }
 
 
 
-.quote{
-	display:flex;
-	align-items:center;
+.quote span{
+	/* display:flex; */
+	/* align-items:center; */
 	/* padding:5px; */
 	/* margin: 15px 0px; */
-	
+	/* border:solid; */
 	
 }
 
 .quote h5{
-	display:block;
+	display:flex;
+	align-items:center;
+	/* display:block; */
 	color:white;
 	font-weight:bold;
 	
